@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gennie Travel</title>
     <link rel="stylesheet" href="style.css">
+  
+  
+
 </head>
 <body>
     <header class="header">
-        <h1>Gennie Travel</h1>
+        <h1>GENNIE TRAVEL</h1>
         <nav>
            <ul class="nav-links">
             <li><a href="#destination">Destination</a></li>
             <li><a href="#packages">Package</a></li>
             <li><a href="#contactus">ContactUs</a></li>
-           </ul>
+            <li>
+                <a href="login.html" class="login-btn">Login</a>
+              </li>
+          </ul>
         </nav>
     </header>
 
@@ -69,15 +75,44 @@
 
     </section>
 
-    <section id="contactUs" class="contactUs">
+    <section class="contactUs" id="ContactUs">
         <h2>📞 contactUs</h2>
         <p>Email: Gennie@gmail.com</p>
         <br>
-        <a href="#packages" class="btn-secondary">Book Now 📧</a>
+        <a href="javascript:void(0)" class="btn-secondary" onclick="openForm()">Book Now 📧</a>
+
     </section>
+   
+<div class="booking-form-container" id="bookingForm">
+    <div class="booking-form">
+      <span class="close-btn" onclick="closeForm()">✖</span>
+      <h2>Book Your Trip</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Destination" required>
+        <input type="date" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+</div>
+  
 
     <footer class="footer" id="footer">
         <p>© 2025 Gennie Travel. Made with love for explorers</p>
     </footer>
+    
 </body>
+<script>
+    const bookingForm = document.getElementById("bookingForm");
+  
+    function openForm() {
+      bookingForm.style.display = "flex";
+    }
+  
+    function closeForm() {
+      bookingForm.style.display = "none";
+    }
+  </script>
+  
 </html>

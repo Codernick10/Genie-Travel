@@ -154,6 +154,68 @@ body{
     font-weight: bold;
     transition: transform 0.3s;
 }
+.booking-form-container {
+    display: none; /* hidden initially */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .booking-form {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  }
+  
+  .booking-form h2 {
+    margin-bottom: 20px;
+    color: var(--pm);
+  }
+  
+  .booking-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .booking-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--normal);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .booking-form button:hover {
+    transform: scale(1.05);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 20px;
+    color: #444;
+    cursor: pointer;
+  }
+  
 
 .contactUs .btn-secondary:hover{
     transform: scale(1.1);
